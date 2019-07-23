@@ -1,0 +1,4 @@
+{"Performance":"Solo","FirstName":"Manny","LastName":"Gatica","Student_ID":"123","DuoFirstName":"","DuoLastName":"","DuoStudentId":"","skill":"Pre-advance","instrument":"Organ","location":"Hart","room":"300","time":"0800"},
+{"Performance":"Duet","FirstName":"Manny","LastName":"Gatica","Student_ID":"123","DuoFirstName":"Manny","DuoLastName":"Gatica","DuoStudentId":"123","skill":"Intermediate","instrument":"Organ","location":"Hart","room":"200","time":"0900"},
+{"Performance":"Solo","FirstName":"Manny","LastName":"Gatica","Student_ID":"123","DuoFirstName":"","DuoLastName":"","DuoStudentId":"","skill":"Pre-advance","instrument":"Organ","location":"Hart","room":"300","time":"1300"},
+{"Performance":"Solo","FirstName":"Adrian","LastName":"Daza","Student_ID":"332","DuoFirstName":"","DuoLastName":"","DuoStudentId":"","skill":"Intermediate","instrument":"Piano","location":"Snow","room":"100","time":"0800"},

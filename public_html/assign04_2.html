@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <link rel="stylesheet" href="style04.css">
+       <title>Emmanuel Gatica's Assignments</title>
+       <meta charset="UTF-8">
+       <style>
+       .portfolio{
+         position: absolute;
+         width: 100%;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         overflow: hidden;
+         text-align: center;
+         background: #34495e;
+         padding: 60px;
+         padding-bottom: 300px;
+         margin-top: 60px;
+
+       }
+       .portfolio h1{
+         text-transform: uppercase;
+         margin-bottom: 60px;
+         color: white;
+         font-size: 40px;
+
+       }
+       .ps{
+         margin-bottom: 60px;
+         position: absolute;
+         width: 100%;
+         top: 62%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+
+       }
+       .ps a{
+
+         display: inline-block;
+         margin-top: 10px;
+         margin-bottom: 50px;
+         margin-left: 200px;
+         width: 240px;
+         height: 160px;
+         overflow: hidden;
+         border-radius: 50%;
+       }
+
+       .ps a img{
+         width: 100%;
+         filter: grayscale(100%);
+         transition: 0.4s all;
+
+       }
+
+       .ps a:hover > img{
+         filter: none;
+       }
+       .section{
+         width: 600px;
+         margin: auto;
+         font-size: 20px;
+         font-family: serif;
+         color: black;
+         text-align: justify;
+         overflow: hidden;
+         height: 0;
+
+       }
+       .section:target{
+         height: auto;
+
+       }
+       .name{
+         display: block;
+         margin-bottom: 30px;
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 22px;
+         font-family: sans-serif;
+
+       }
+
+       </style>
+   </head>
+  <body>
+<!--                                                                        -->
+<header>
+  <div class="main">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Smiley face">
+    </div>
+    <ul>
+      <li><a href="assign04.html">Home</a></li>
+      <li class="active"><a href="assign04_2.html">Portfolio</a></li>
+      <li><a href="assign04_2.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+  <div class="portfolio">
+    <h1>Skills</h1>
+  </div>
+
+  <div class="ps">
+    <a href="#p1"><img src="/img/game.jpg" alt= ""></a>
+    <a href="#p2"><img src="/img/web.jpg" alt= ""></a>
+    <a href="#p3"><img src="/img/code.jpg" alt= ""></a>
+
+  </div>
+
+
+<div class="section" id="p1">
+  <span class="name" style="text-shadow: 2px 2px 4px #000000;">Game Development</span>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+
+<div class="section" id="p2">
+  <span class="name" style ="text-shadow: 2px 2px 4px #000000;">Web Development</span>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+
+<div class="section" id="p3">
+  <span class="name" style="text-shadow: 2px 2px 4px #000000;">Software Development</span>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+</footer>
+</body>
+
+
+
+
+</html>

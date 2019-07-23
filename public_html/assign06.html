@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+       <title>Emmanuel Gatica's Mortgage Calculator</title>
+       <link rel="stylesheet" href="/css/style06.css">
+       <meta charset="UTF-8">
+   </head>
+   <body>
+      <!--
+      <header>
+      <div class="main">
+            <div class="logo">
+              <img src="logo.png" alt="logo">
+            </div>
+            <ul>
+              <li class="active"><a href="index.html">CS Assignments</a></li>
+              <li><a href="assign04html">Prev Assignment</a></li>
+              <li><a href="assign06.html">Next Assignement</a></li>
+            </ul>
+          </div>
+         </header>
+         -->
+
+   <div class = "commentFormWrapper">
+      <div class = "commentFormTitle">Purchasing Form</div>
+      <div class = "commentFormLeftWrapper">
+         <div class="commentFormLabel">First Name:</div>
+         <div class="commentFormLabel">Last name:</div>
+         <div class="commentFormLabel">Address:</div>
+         <div class="commentFormLabel">Phone Number:</div>
+      </div>
+      
+      <div class="commentFormRightWrapper">
+         <form>
+            <input id="firstName" onkeyup="validateName()" class="commentFormInput" type="text"/><label id="firstNamePrompt"></label><br />
+            <input id="lastName" onkeyup="validateLName()" class="commentFormInput"  type="text"/><label id="lastNamePrompt"></label><br />
+            <textarea id="textA" onkeyup="validateAddress()" class="commentFormTextArea"></textarea><label id="textPrompt"></label><br />
+            <input id="phoneNumber" onchange="validatePhone()" class="commentFormInput" type="text"/><label id="phonePrompt"></label><br />
+         </form>
+      </div>
+
+      <div class="shoppingCart">
+         <form>
+               <table style="width:100%">
+                     <tr>
+                       <th>Item</th>
+                       <th>Purchase Price</th> 
+                     </tr>
+                     <tr>
+                       <td><input onclick="addTotal(this.id)" type="checkbox" id="zero" name="item_0" value="1350"><p>Iphone X S</p><br></td>
+                       <td>$1350</td> 
+                     </tr>
+                     <tr>
+                       <td><input onclick="addTotal(this.id)" type="checkbox" id="one" name="item_1" value="1300"><p>Samsung Galaxy S10 5G</p><br></td>
+                       <td>$1300</td> 
+                     </tr>
+                     <tr>
+                        <td><input onclick="addTotal(this.id)" type="checkbox" id="two" name="item_2" value="500"><p>Pixel 3a</p><br></td>
+                        <td>$500</td> 
+                      </tr>
+                      <tr>
+                        <td><input onclick="addTotal(this.id)" type="checkbox" id="three" name="item_3" value="800"><p>Iphone 8 Plus</p><br></td>
+                        <td>$800</td> 
+                      </tr>
+                   </table>
+                   <div id="total">$00.00</div><br>
+         </form>
+      </div>
+
+
+
+      <div class="creditCardInfo">
+         <form>
+            <input type="radio" name="card" value="visa"> Visa<br>
+            <input type="radio" name="card" value="mastercard"> Mastercard<br>
+            <input type="radio" name="card" value="american express"> American Express<br>
+
+            <label id="creditCardNumber">Credit Card Number: </label>
+            <input type="text" id="cardNumber" onchange="validateNumber()">
+            <label id="cardPrompt"></label><br />
+
+            <label id="creditCardExp">Credit Card Expiration: </label><br>
+
+            <label id="creditCardMonth">Month: </label>
+            <input type="text" id="month" onchange="validateMonth()">
+            <label id="monthPrompt"></label><br />
+
+            <label id="creditCardYear">Year: </label>
+            <input type="text" id="year" onchange="validateYear()">
+            <label id="yearPrompt"></label><br />
+
+         </form>
+
+
+      </div>
+
+      <label><button id="clear" onclick="clearFunction()">Clear</button></label>  
+      <label><button id="calculate" onclick="calcFunction()">Submit</button></label>
+
+
+      
+   </div>
+   <script src="/js/javascript06.js"></script>
+
+ 
+   </body>
+</html>
+

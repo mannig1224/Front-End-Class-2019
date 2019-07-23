@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+       <title>Form Validator</title>
+       <link rel="stylesheet" href="/css/style13.css">
+       <meta charset="UTF-8">
+
+   </head>
+   <body>
+        <form>
+                <div class = "commentFormTitle">Music Festival Registration</div>
+
+                
+
+                    <label> <input id="solo" type="radio" onclick="duetCheck()" name="performance" value="Solo"> Solo </label>
+                    <label> <input id="duet" type="radio" onclick="duetCheck()" name="performance" value="Duet"> Duet </label>
+                    <label> <input id="concert" type="radio" onclick="duetCheck()" name="performance" value="Concert"> Concert </label>
+                    <label id="performancePrompt"> </label>
+                    <br>
+
+                    <input id="firstName" onkeyup="validateName()" class="commentFormInput" type="text" placeholder="First Name" name="firstName"/><label id="firstNamePrompt"></label><br />  
+                    <input id="lastName" onkeyup="validateLName()" class="commentFormInput"  type="text" placeholder="Last Name" name="lastName"/><label id="lastNamePrompt"></label><br />
+                    <input id="studentId" onkeyup="validateStudent()" class="commentFormInput" type="text" placeholder="Student ID" name="studentNumber"/><label id="studentIdPrompt"></label><br />
+    
+                     
+                    
+                    <div id = "duoForm">
+                    <input id="firstNameDuo" onkeyup="validateNameDuo()" class="commentFormInput" type="text" placeholder="First Name" name="firstNameDuo"/><label id="firstNameDuoPrompt"></label><br />  
+                    <input id="lastNameDuo" onkeyup="validateLNameDuo()" class="commentFormInput"  type="text" placeholder="Last Name" name="lastNameDuo"/><label id="lastNameDuoPrompt"></label><br />
+                    <input id="studentIdDuo" onkeyup="validateStudentDuo()" class="commentFormInput" type="text" placeholder="Student ID" name="studentNumberDuo"/><label id="studentIdDuoPrompt"></label><br />
+                    </div>
+
+
+                
+
+                    <select id="skill">
+                        <option value="" selected disabled hidden>-- choose a skill level --</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Pre-advance">Pre-advance</option>
+                        <option value="Advance">Advance</option>
+                    </select><label id="skillPrompt"> </label><br>
+
+                    <select id="instrument">
+                        <option value="" selected disabled hidden>-- choose an instrument --</option>
+                        <option value="Piano">Piano</option>
+                        <option value="Voice">Voice</option>
+                        <option value="String">String</option>
+                        <option value="Organ">Organ</option>
+                        <option value="Other">Other</option>
+                    </select><label id="instrumentPrompt"> </label><br>
+
+                    <select id="location">
+                        <option value="" selected disabled hidden>-- choose a location --</option>
+                        <option value="Snow">Snow</option>
+                        <option value="Austin">Austin</option>
+                        <option value="Hart">Hart</option>
+                    </select><label id="locationPrompt"> </label><br>
+
+                    <select id="room">
+                        <option value="" selected disabled hidden>-- choose a room --</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                    </select><label id="roomPrompt"> </label><br>
+
+                    <select id="time">
+                        <option value="" selected disabled hidden>-- choose time --</option>
+                        <option value="0800">0800</option>
+                        <option value="0900">0900</option>
+                        <option value="1000">1000</option>
+                        <option value="1100">1100</option>
+                        <option value="1200">1200</option>
+                        <option value="1300">1300</option>
+                        <option value="1400">1400</option>
+                        <option value="1500">1500</option>
+                        <option value="1600">1600</option>
+                    </select><label id="timePrompt"> </label><br>
+
+                    
+                </form>
+
+                <button id="clear" onclick="clearFunction()">Clear</button>
+                <button id="register" onclick="return calcFunction()">Register</button><br>
+                <div id="jsonInfo">Hello</div>
+
+                
+         <script src="/js/javascript13.js"></script>
+
+
+
+   </body>
+</html>
+

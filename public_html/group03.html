@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style> /* #0 */
+	   /* Cesar Sales Begin */
+     body {
+       background-color: black;
+     }
+
+     h1, h2, h3, p, a, ul, li {
+       color: white;
+     }
+
+     h1:hover, h2:hover, h3:hover {
+       text-decoration: underline;
+       text-decoration-color: red; /* Not supported in Edge */
+       transition: 1s;
+     }
+
+     p:hover {
+       background-color: white;
+       color: black;
+       transition: 1s;
+     }
+
+     a {
+       color: gray;
+       text-decoration: none;
+     }
+
+     a:hover {
+       background-color: red;
+       color: black;
+       transition: 1s;
+     }
+
+     li {
+       font-size: 15px;
+       transition: .5s;
+     }
+
+     li:hover {
+       font-size: 22px;
+       transition: .5s;
+     }
+     /* Cesar Sales End */
+	</style>
+    <style> /* #1 */
+
+    body {
+      background-color: #fab1a0;
+    }
+
+    h1, h2, h3, p, a, ul, li {
+      color: #68972F;
+      text-align: center;
+    }
+
+
+    h1:hover, h2:hover, h3:hover {
+      text-decoration: underline;
+      text-decoration-color: #68972F;
+      transition: 2s;
+    }
+    p{
+      text-align: center;
+    }
+
+    a {
+      color: gray;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #68972F;
+      color: black;
+      transition: 1s;
+    }
+
+    li {
+      font-size: 15px;
+      transition: .5s;
+      color: black;
+    }
+
+    li:hover {
+      font-size: 30px;
+      transition: .5s;
+      color: #68972F;
+    }
+    #menuBar{
+        display: inline-block;
+        margin: 0;
+        font-size: 10px;
+    }
+    #menuBarList li{
+        display: inline;
+        width: 100px;
+        margin-right: 75px;
+        margin-left: 75px;
+    }
+    .menuBarItem{
+        display: inline;
+        float: center;
+        font-size: 25px;
+
+
+    }
+
+	</style>
+    <style> /* #2 */
+	   body { font-size:12px; }
+	</style>
+    <style> /* #3 */
+	   body { font-size:8px; }
+	</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+   </head>
+
+   <body onload="disableStyles()">
+      <div class="document">
+        <div id="title">
+          <h1>Week 03 : CSS</h1>
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!--title -->
+        <div class="content">
+          <div id="menuBar">
+            <ul id="menuBarList">
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+            </ul>
+          </div> <!-- menuBar -->
+          <div id="text">
+            <h1>Select the Stylesheet</h1>
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts,
+            		and even the layout of the page.You can change the layout of this page by selecting different
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+             <h1>Instructions</h1>
+            <p>Please modify this page to include a description of each stylesheet, including anything clever that
+            		you did to achieve a given effect. Please also include the contributors to a given stylesheet.</p>
+         </div> <!-- text -->
+         <div id="sidebar">
+           <h3>Grading</h3>
+            <p>In order to get full credit for this assignment, you will need to demonstrate what you have learned
+            		and how you helped your classmates. This means your contribution needs to be briefly described
+                    on the page.</p>
+          </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by </div>
+      </div> <!-- document -->
+
+      <script>
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+	    function disableStyles()
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+   </body>
+</html>

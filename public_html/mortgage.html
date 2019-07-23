@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Emmanuel Gatica's Mortgage Calculator</title>
+       <link rel="stylesheet" href="/css/style05.css">
+       <meta charset="UTF-8">
+   </head>
+   <body>
+
+
+   <div class="calc">
+
+      <h1>Mortgage Calculator</h1>
+
+   <form action="mortgage.php">
+
+      Loan Amount:<br> <input type="text" id="amount" name="amount" onchange="checkAmount(this.value)"/>
+      <p id="error-Amount">Loan Amount must be a number greater than "0"</p>
+
+      APR (Interest):<br> <input type="text" id="apr" name="apr" onchange="checkApr(this.value)"/>
+      <p id="error-Apr">APR must be a value between 0 and 25</p>
+      
+      Loan Term (in years):<br> <input type="text" id="term" name="term" onchange="checkTerm(this.value)"/>
+      <p id="error-Term">Term must be greater than zero and less or equal to 40.</p>
+
+      <button id="clear" onclick="clearFunction()">Clear</button>
+      <input type="submit" value="Submit">
+
+      
+   </form>
+   <hr/>
+   <p><b>Monthly Payment: <span id="payment"></span></b></p>
+   <script src="/js/mortgage_10.js"></script>
+   
+
+
+   </div>
+   </body>
+</html>

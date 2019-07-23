@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+}
+/* navigation styles start here */
+
+header {
+  /* The image used */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("utah.jpg");
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+h1{
+  color: #fff;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 1s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+}
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+.portfolio{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  background: #34495e;
+  padding: 60px;
+  padding-bottom: 300px;
+  margin-top: 60px;
+
+}
+.portfolio h1{
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 40px;
+
+}
+.ps{
+  margin-bottom: 60px;
+  position: absolute;
+  width: 100%;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.ps a{
+
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  width: 240px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ps a img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+
+}
+
+.ps a:hover > img{
+  filter: none;
+}
+.section{
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+  text-align: justify;
+  overflow: hidden;
+
+}
+.section:target{
+  height: auto;
+
+}
+.name{
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+}

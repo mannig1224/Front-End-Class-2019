@@ -1,0 +1,132 @@
+
+       
+       * {
+          box-sizing: border-box;
+       }
+       
+       body {
+          margin: 0;
+          font-size: 62.5%;
+       }
+       
+       ul {
+          padding-left: 0;
+       }
+       
+       /**************************************/
+       
+       .blue_rounded {
+          border: 2px solid #26607F;
+          border-radius: 0.5rem;
+          background-color: #0076b6;
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin: 1rem;
+          padding: 1rem;
+       }
+       
+       
+       #flex_second_wrapper{
+          list-style-type: none;
+       }
+       
+       .form-row,
+       .form-row > * {
+          padding: 0.5rem;
+       }
+       
+       .form-row > fieldset {
+          background-color: #fff;
+       }
+       
+       .form-row > button {
+          width:auto;
+          margin: 0.5rem;
+       }
+       .flex_div {
+          color: #fff;
+       }
+
+
+#flex_second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.form-row{
+    display: flex;
+    flex-direction: column;
+
+}
+#card{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+#item{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+table{
+    border-collapse: collapse;
+}
+table th{
+    text-align: left;
+    background-color: black;
+    color: #fff;
+    padding: 4px 30px 4px 8px;
+}
+table td{
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+}
+table tr:nth-child(odd) td {
+    background-color: #c7c9ca;
+}
+table tr:nth-child(even) td {
+    background-color: #e7edf0;
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+    
+    #flex_second{ 
+    display: flex;
+    margin-top: 1rem; 
+    flex-direction: column;
+    }
+    
+    .form-row{ 
+    display: flex; 
+    flex-direction: column; 
+    }
+    
+    #card{ 
+    display: flex; 
+    align-content: flex-start; 
+    flex-direction: column; 
+    }
+
+    }
+    @media (min-width: 1200px) {
+
+        
+        #flex_second{ 
+        display: flex;
+        margin-top: 1rem; 
+        flex-direction: column;
+        }
+        
+        .form-row{ 
+        display: flex; 
+        flex-direction: column; 
+        }
+        
+        #card{ 
+        display: flex; 
+        align-content: flex-start; 
+        flex-direction: column; 
+        }
+        
+        
+        }

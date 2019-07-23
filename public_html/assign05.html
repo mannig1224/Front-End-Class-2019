@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Emmanuel Gatica's Mortgage Calculator</title>
+       <link rel="stylesheet" href="/css/style05.css">
+       <meta charset="UTF-8">
+   </head>
+   <body>
+      <header>
+      <div class="main">
+            <div class="logo">
+              <img src="/img/logo.png" alt="logo">
+            </div>
+            <ul>
+              <li class="active"><a href="index.html">CS Assignments</a></li>
+              <li><a href="assign04html">Prev Assignment</a></li>
+              <li><a href="assign06.html">Next Assignement</a></li>
+            </ul>
+          </div>
+         </header>
+
+   <div class="calc">
+      <h1>Mortgage Calculator</h1>
+      <p><b>Loan Ammount</b>: <input type"text" id="amount" onchange="checkAmount(this.value)"/></p>
+      <p id="error-Amount">Loan Amount must be a number greater than "0"</p>
+      <p><b>APR (Interest)</b>: <input type"text" id="apr" onchange="checkApr(this.value)"/></p>
+      <p id="error-Apr">APR must be a value between 0 and 25</p>
+      <p><b>Loan Term (in years)</b>: <input type"text" id="term" onchange="checkTerm(this.value)"/></p>
+      <p id="error-Term">Term must be greater than zero and less or equal to 40.</p>
+      <p><button id="clear" onclick="clearFunction()">Clear</button></p>  
+      <p><button id="calculate" onclick="calcFunction()">Calculate Payments</button></p>
+      <hr/>
+      <p><b>Monthly Payment: <span id="payment"></span></b></p>
+   
+   <script src="/js/mortgage.js"></script>
+   
+
+   </div>
+   </body>
+</html>

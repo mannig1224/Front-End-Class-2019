@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+       <title>Form Validator</title>
+       <link rel="stylesheet" href="/css/style11.css">
+       <meta charset="UTF-8">
+
+   </head>
+   <body>
+
+         
+            <section id="flex_second" class="blue_rounded">
+               <form action="assign11.php" method="POST">
+                  <div class = "commentFormTitle">Purchasing Form</div>
+
+                     <ul id="flex_second_wrapper">
+                        <li class="form-row">
+                           <input id="firstName" onkeyup="validateName()" class="commentFormInput" type="text" placeholder="First Name" name="firstName"/><label id="firstNamePrompt"></label><br />
+                        </li>
+                        <li class="form-row">
+                           <input id="lastName" onkeyup="validateLName()" class="commentFormInput"  type="text" placeholder="Last Name" name="lastName"/><label id="lastNamePrompt"></label><br />
+                        </li>
+                        <li class="form-row">
+                           <textarea id="textA" onkeyup="validateAddress()" class="commentFormTextArea" placeholder="Address" name="address"></textarea><label id="textPrompt"></label><br />
+                        </li>
+                        <li class="form-row">
+                           <input id="phoneNumber" onchange="validatePhone()" class="commentFormInput" type="text" placeholder="Phone Number" name="phoneNumber"/><label id="phonePrompt"></label><br />
+                        </li>
+                        <li class="form-row">
+                              <table style="width:100%">
+                                    <tr>
+                                      <th>Item</th>
+                                      <th>Purchase Price</th> 
+                                    </tr>
+                                    <tr>
+                                      <label><td><input onclick="addTotal(this.id)" type="checkbox" id="zero" name="item[]" value="Iphone X S">Iphone X S</label></td>
+                                      <td>$1350</td> 
+                                    </tr>
+                                    <tr>
+                                      <label><td><input onclick="addTotal(this.id)" type="checkbox" id="one" name="item[]" value="Samsung">Samsung Galaxy S10 5G</label></td>
+                                      <td>$1300</td> 
+                                    </tr>
+                                    <tr>
+                                       <label><td><input onclick="addTotal(this.id)" type="checkbox" id="two" name="item[]" value="Pixel 3a">Pixel 3a</label></td>
+                                       <td>$500</td> 
+                                     </tr>
+                                     <tr>
+                                       <label><td><input onclick="addTotal(this.id)" type="checkbox" id="three" name="item[]" value="Iphone 8 Plus">Iphone 8 Plus</label></td>
+                                       <td>$800</td> 
+                                     </tr>
+                                  </table>
+                                  <div id="total">$00.00</div><br>
+                           </li>
+                        <li class="form-row">
+                           <label for="card">Card</label>
+                           <fieldset id="card">
+                                 <label> <input type="radio" name="card" value="Visa"> Visa </label>
+                                 <label> <input type="radio" name="card" value="Mastercard"> Mastercard </label>
+                                 <label> <input type="radio" name="card" value="American Express"> American Express </label>
+                           </fieldset>
+                        </li>
+                        <li class="form-row">
+                              <label id="creditCardNumber">Credit Card Number: </label>
+                              <input type="text" id="cardNumber" onchange="validateNumber()">
+                              <label id="cardPrompt"></label><br />   
+                        </li>
+                        <li class="form-row">
+                              <label id="creditCardExp">Credit Card Expiration: </label><br>
+
+                              <label id="creditCardMonth">Month: </label>
+                              <input type="text" id="month" name="month" onchange="validateMonth()">
+                              <label id="monthPrompt"></label><br />
+                        </li>
+                        <li class="form-row">
+                              <label id="creditCardYear">Year: </label>
+                              <input type="text" id="year" name="year" onchange="validateYear()">
+                              <label id="yearPrompt"></label><br />                        
+                        </li>
+                        <li class="form-row">
+                              <button id="clear" onclick="clearFunction()">Clear</button> 
+                        </li>
+                        <li class="form-row">
+                              <input type="submit" id="calculate" onclick="return calcFunction()" value="Submit" name="submit">
+                        </li>
+                     </ul>
+                  </form>
+               </section>
+
+   <script src="/js/javascript06.js"></script>
+
+ 
+   </body>
+</html>
+

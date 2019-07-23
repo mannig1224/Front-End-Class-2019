@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+}
+/* navigation styles start here */
+body{
+  background: gray;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 1s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+}
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1{
+  color: #fff;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-weight: lighter;
+  position: relative;
+  padding-top: 150px;
+}
+.calc{
+position: relative;
+padding-left: 25px;
+padding-top: 15px;
+}
+#error-Amount{
+  visibility: hidden;
+  color: red;
+}
+#error-Apr{
+  visibility: hidden;
+  color: red;
+}
+#error-Term{
+  visibility: hidden;
+  color: red;
+}
